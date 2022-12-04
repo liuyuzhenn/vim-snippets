@@ -56,27 +56,27 @@ endglobal
 # Sections and Paragraphs #
 ###########################
 snippet sec "Section" b
-# ${1:Section Name} #
+# ${1:Section Name}
 $0
 endsnippet
 
 snippet ssec "Sub Section" b
-## ${1:Section Name} ##
+## ${1:Section Name}
 $0
 endsnippet
 
 snippet sssec "SubSub Section" b
-### ${1:Section Name} ###
+### ${1:Section Name}
 $0
 endsnippet
 
 snippet par "Paragraph" b
-#### ${1:Paragraph Name} ####
+#### ${1:Paragraph Name}
 $0
 endsnippet
 
 snippet spar "Paragraph" b
-##### ${1:Paragraph Name} #####
+##### ${1:Paragraph Name}
 $0
 endsnippet
 
@@ -138,6 +138,22 @@ snippet detail "Disclosure"
 <details${3: open=""}>
   ${1:<summary>${2}</summary>}$0
 </details>
+endsnippet
+
+snippet mk "math environmtent"
+$$${1}$$$0
+endsnippet
+
+snippet bf "bold face" i
+**${1}**$0
+endsnippet
+
+snippet ie "italic i.e." i
+*i.e.*
+endsnippet
+
+snippet eg "italic e.g." i
+*e.g.*
 endsnippet
 
 post_jump "create_table(snip)"
